@@ -1,0 +1,19 @@
+[project]
+name = "staypilot"
+version = "0.1.0"
+description = "StayPilot multi-agent hotel services workspace"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[tool.uv]
+package = false
+
+[tool.uv.workspace]
+members = ["apps/gateway", "apps/agents/*", "packages/*"]
+
+[tool.uv.sources]
+staypilot-contracts = { workspace = true }
+staypilot-security = { workspace = true }
+staypilot-data = { workspace = true }
+staypilot-config = { workspace = true }
+staypilot-observability = { workspace = true }

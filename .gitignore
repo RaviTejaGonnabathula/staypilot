@@ -1,0 +1,28 @@
+# Python environments and generated files
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+.secrets/
+*.log
+
+# Local planning exports
+/chatgpt-export/
+/notion-*.png
+
+# OS metadata
+.DS_Store
+Thumbs.db

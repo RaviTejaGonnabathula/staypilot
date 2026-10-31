@@ -1,0 +1,12 @@
+[project]
+name = "staypilot-security"
+version = "0.1.0"
+description = "Identity verification and operation authorization helpers"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "staypilot-contracts==0.1.0",
+]
+
+[build-system]
+requires = ["uv_build==0.11.24"]
+build-backend = "uv_build"

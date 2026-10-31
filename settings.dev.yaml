@@ -1,0 +1,2 @@
+# Nonsecret configuration seed; extend when the settings loader is implemented.
+environment: dev

@@ -1,0 +1,185 @@
+version = 1
+revision = 3
+requires-python = "==3.12.*"
+
+[manifest]
+members = [
+    "staypilot",
+    "staypilot-amenities",
+    "staypilot-billing",
+    "staypilot-booking",
+    "staypilot-config",
+    "staypilot-contracts",
+    "staypilot-data",
+    "staypilot-gateway",
+    "staypilot-master",
+    "staypilot-observability",
+    "staypilot-profile",
+    "staypilot-security",
+]
+
+[[package]]
+name = "staypilot"
+version = "0.1.0"
+source = { virtual = "." }
+
+[[package]]
+name = "staypilot-amenities"
+version = "0.1.0"
+source = { editable = "apps/agents/amenities" }
+dependencies = [
+    { name = "staypilot-config" },
+    { name = "staypilot-contracts" },
+    { name = "staypilot-data" },
+    { name = "staypilot-observability" },
+    { name = "staypilot-security" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "staypilot-config", editable = "packages/config" },
+    { name = "staypilot-contracts", editable = "packages/contracts" },
+    { name = "staypilot-data", editable = "packages/data" },
+    { name = "staypilot-observability", editable = "packages/observability" },
+    { name = "staypilot-security", editable = "packages/security" },
+]
+
+[[package]]
+name = "staypilot-billing"
+version = "0.1.0"
+source = { editable = "apps/agents/billing" }
+dependencies = [
+    { name = "staypilot-config" },
+    { name = "staypilot-contracts" },
+    { name = "staypilot-data" },
+    { name = "staypilot-observability" },
+    { name = "staypilot-security" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "staypilot-config", editable = "packages/config" },
+    { name = "staypilot-contracts", editable = "packages/contracts" },
+    { name = "staypilot-data", editable = "packages/data" },
+    { name = "staypilot-observability", editable = "packages/observability" },
+    { name = "staypilot-security", editable = "packages/security" },
+]
+
+[[package]]
+name = "staypilot-booking"
+version = "0.1.0"
+source = { editable = "apps/agents/booking" }
+dependencies = [
+    { name = "staypilot-config" },
+    { name = "staypilot-contracts" },
+    { name = "staypilot-data" },
+    { name = "staypilot-observability" },
+    { name = "staypilot-security" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "staypilot-config", editable = "packages/config" },
+    { name = "staypilot-contracts", editable = "packages/contracts" },
+    { name = "staypilot-data", editable = "packages/data" },
+    { name = "staypilot-observability", editable = "packages/observability" },
+    { name = "staypilot-security", editable = "packages/security" },
+]
+
+[[package]]
+name = "staypilot-config"
+version = "0.1.0"
+source = { editable = "packages/config" }
+
+[[package]]
+name = "staypilot-contracts"
+version = "0.1.0"
+source = { editable = "packages/contracts" }
+
+[[package]]
+name = "staypilot-data"
+version = "0.1.0"
+source = { editable = "packages/data" }
+dependencies = [
+    { name = "staypilot-contracts" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "staypilot-contracts", editable = "packages/contracts" }]
+
+[[package]]
+name = "staypilot-gateway"
+version = "0.1.0"
+source = { editable = "apps/gateway" }
+dependencies = [
+    { name = "staypilot-config" },
+    { name = "staypilot-contracts" },
+    { name = "staypilot-data" },
+    { name = "staypilot-observability" },
+    { name = "staypilot-security" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "staypilot-config", editable = "packages/config" },
+    { name = "staypilot-contracts", editable = "packages/contracts" },
+    { name = "staypilot-data", editable = "packages/data" },
+    { name = "staypilot-observability", editable = "packages/observability" },
+    { name = "staypilot-security", editable = "packages/security" },
+]
+
+[[package]]
+name = "staypilot-master"
+version = "0.1.0"
+source = { editable = "apps/agents/master" }
+dependencies = [
+    { name = "staypilot-config" },
+    { name = "staypilot-contracts" },
+    { name = "staypilot-observability" },
+    { name = "staypilot-security" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "staypilot-config", editable = "packages/config" },
+    { name = "staypilot-contracts", editable = "packages/contracts" },
+    { name = "staypilot-observability", editable = "packages/observability" },
+    { name = "staypilot-security", editable = "packages/security" },
+]
+
+[[package]]
+name = "staypilot-observability"
+version = "0.1.0"
+source = { editable = "packages/observability" }
+
+[[package]]
+name = "staypilot-profile"
+version = "0.1.0"
+source = { editable = "apps/agents/profile" }
+dependencies = [
+    { name = "staypilot-config" },
+    { name = "staypilot-contracts" },
+    { name = "staypilot-data" },
+    { name = "staypilot-observability" },
+    { name = "staypilot-security" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "staypilot-config", editable = "packages/config" },
+    { name = "staypilot-contracts", editable = "packages/contracts" },
+    { name = "staypilot-data", editable = "packages/data" },
+    { name = "staypilot-observability", editable = "packages/observability" },
+    { name = "staypilot-security", editable = "packages/security" },
+]
+
+[[package]]
+name = "staypilot-security"
+version = "0.1.0"
+source = { editable = "packages/security" }
+dependencies = [
+    { name = "staypilot-contracts" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "staypilot-contracts", editable = "packages/contracts" }]

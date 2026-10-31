@@ -1,0 +1,15 @@
+[project]
+name = "staypilot-master"
+version = "0.1.0"
+description = "Request routing and remote specialist delegation"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "staypilot-contracts==0.1.0",
+    "staypilot-security==0.1.0",
+    "staypilot-config==0.1.0",
+    "staypilot-observability==0.1.0",
+]
+
+[build-system]
+requires = ["uv_build==0.11.24"]
+build-backend = "uv_build"
