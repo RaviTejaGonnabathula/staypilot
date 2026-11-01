@@ -9,6 +9,7 @@ dependencies = [
     "staypilot-data==0.1.0",
     "staypilot-config==0.1.0",
     "staypilot-observability==0.1.0",
+    "google-adk[a2a]==2.13.0",
 ]
 
 [build-system]

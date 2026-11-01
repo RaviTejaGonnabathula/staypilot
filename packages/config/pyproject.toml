@@ -3,7 +3,10 @@ name = "staypilot-config"
 version = "0.1.0"
 description = "Typed settings and configuration loading"
 requires-python = ">=3.12,<3.13"
-dependencies = []
+dependencies = [
+    "pydantic-settings>=2.16.2",
+    "pyyaml>=6.0.3",
+]
 
 [build-system]
 requires = ["uv_build==0.11.24"]

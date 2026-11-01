@@ -3,7 +3,9 @@ name = "staypilot-contracts"
 version = "0.1.0"
 description = "Shared request, response, and agent message contracts"
 requires-python = ">=3.12,<3.13"
-dependencies = []
+dependencies = [
+    "pydantic>=2.12,<3",
+]
 
 [build-system]
 requires = ["uv_build==0.11.24"]
