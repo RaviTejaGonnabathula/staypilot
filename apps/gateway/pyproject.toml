@@ -18,19 +18,3 @@ requires = ["uv_build==0.11.24"]
 build-backend = "uv_build"
 
 
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-asyncio_mode = "auto"
-addopts = "-ra --strict-markers"
-markers = [
-    "integration: requires local services such as PostgreSQL",
-    "cloud: requires explicitly authorized cloud access",
-    "eval: evaluates agent behavior",
-]
-
-[tool.ruff]
-target-version = "py312"
-line-length = 100
-
-[tool.ruff.lint]
-select = ["E4", "E7", "E9", "F", "I"]
